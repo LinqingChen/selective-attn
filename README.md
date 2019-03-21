@@ -1,6 +1,6 @@
 This is an implementation of our paper:
 
-Sameen Maruf, Andr\'e F. T. Martins and Gholamreza Haffari: Selective Attention for Context-aware Neural Machine Translation. Accepted at NAACL-HLT 2019.
+Sameen Maruf, Andre F. T. Martins and Gholamreza Haffari: Selective Attention for Context-aware Neural Machine Translation. Accepted at NAACL-HLT 2019.
 
 Please cite our paper if you use our code. 
 
