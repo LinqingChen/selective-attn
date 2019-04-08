@@ -8,7 +8,7 @@ Note: modelfname is the directory which contains the model files and vocabs spec
 
 COMPUTING THE REPRESENTATIONS:(Manually make directories for representations in model-path src-rep or tgt-rep before running, Here the data files should be in format docid ||| source ||| target)
 
-./build_gpu/transformer-computerep --dynet-mem 15500 --model-path $modelfname --input_doc $fname --input_type 2 --rep_type 1
+./build_gpu/transformer-computerep --dynet_mem 15500 --model-path $modelfname --input_doc $fname --input_type 2 --rep_type 1
 
 (Note: rep_type tells whether the representation computed is monolingual (from encoder) or bilingual (from decoder) and input_type tells 
 whether the input is training, dev or test.)
@@ -29,7 +29,7 @@ The option "dynet-devices" is only required when using hierarchical attention.
 set to sparse at sentence and soft attention at word-level.
 
 DECODING THE SENTENCE-LEVEL MODEL:
-./build_gpu/transformer-decode --dynet-mem 15000 --model-path $modelfname --beam 1 -T $testfname 
+./build_gpu/transformer-decode --dynet_mem 15000 --model-path $modelfname --beam 1 -T $testfname 
 
 DECODING THE DOCUMENT-LEVEL MODEL:
 ./build_gpu/transformer-context-decode --dynet-mem 15000 --model-path $modelfname --model-file $modelname --beam 1 -T $testfname --context-type 1
