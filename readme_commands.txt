@@ -6,7 +6,7 @@ TRAINING THE SENTENCE-LEVEL MODEL:(Here the data files should be in format sourc
 
 Note: modelfname is the directory which contains the model files and vocabs specified by option model-path.
 
-COMPUTING THE REPRESENTATIONS:(Manually make directories for representations in model-path src-rep or tgt-rep before running, Here the data files should be in format docid ||| source ||| target)
+COMPUTING THE REPRESENTATIONS:(Manually make directories for representations in model-path src-rep or tgt-rep before running, Here the data files should be in format docid ||| source)
 
 ./build_gpu/transformer-computerep --dynet_mem 15500 --model-path $modelfname --input_doc $fname --input_type 2 --rep_type 1
 
