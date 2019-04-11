@@ -10,8 +10,7 @@ COMPUTING THE REPRESENTATIONS:(Manually make directories for representations in 
 
 ./build_gpu/transformer-computerep --dynet_mem 15500 --model-path $modelfname --input_doc $fname --input_type 2 --rep_type 1
 
-(Note: rep_type tells whether the representation computed is monolingual (from encoder) or bilingual (from decoder) and input_type tells 
-whether the input is training, dev or test.)
+(Note: rep_type tells whether the representation computed is monolingual (from encoder, rep_type = 1) or bilingual (from decoder, rep_type = 2) and input_type tells whether the input is training (0), dev (1) or test (2).)
 
 TRAINING THE DOCUMENT-LEVEL MODEL:(Here the data files should be in format docid ||| source ||| target)
 Train a hierarchical sparse-soft model with monolingual context.
